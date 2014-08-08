@@ -4,7 +4,7 @@ Raspberry Pi i2c controlled H-bridge
 Connection to the Raspberry Pi I2C bus is done as follows
 
 ```textile
-Raspberry Pi     power switch CONN2     
+Raspberry Pi     H-bridge CONN2     
 SDA (GPIO0) ---- 2 SDA
 SCL (GPIO1) ---- 4 SCL
 ```
