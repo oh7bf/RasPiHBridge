@@ -27,6 +27,7 @@ needs good understanding of the circuit and good skills in electronics.
 Parts
 =====
 
+```textile
 C1	2.2uF/25V
 C2	1uF/35V
 C3	100nF
@@ -48,17 +49,19 @@ R7,R8   100
 U1      PIC12F675
 U2      78L05
 U3      L293D 
-
+```
 
 Files
 =====
 
+```textile
 board_component.pdf         - PCB component placement
 board_mirror.pdf            - PCB for toner transfer production
 board_silk_mirror.pdf       - silk screen for toner transfer printing
 raspihbridge.pdf            - circuit diagram
 raspihbridge.sch
 README.md                   - this file
+```
 
 Software
 ========
@@ -68,6 +71,7 @@ PiPIC.
 
 The EEPROM needs to have following data
 
+```textile
 address   data      bits inverted except for TRISIO
 10        F8        ini_CMCON
 11        FF        ini_GPIO
@@ -78,24 +82,32 @@ address   data      bits inverted except for TRISIO
 16        CE        ini_T1CON
 17        FF        ini_IOC
 20        28        i2c address (or other free address)
+```
 
 See the manual page pipic(1) on how this data could be programmed. 
 
 For testing you need to reset the PiPIC first with
 
+```
 pipic -a 28 -c 50
+```
 
 Turn motor clockwise
 
+```
 pipic -a 28 -c 30 -d 31b
+```
 
 Stop motor
 
+```
 pipic -a 28 -c 30 -d 15b
+```
 
 Turn motor counter clockwise
 
+```
 pipic -a 28 -c 30 -d 47b
-
+```
 
 
