@@ -3,9 +3,11 @@ Raspberry Pi i2c controlled H-bridge
 
 Connection to the Raspberry Pi I2C bus is done as follows
 
+```textile
 Raspberry Pi     power switch CONN2     
 SDA (GPIO0) ---- 2 SDA
 SCL (GPIO1) ---- 4 SCL
+```
 
 Ground connection is not needed in a typical application where both Raspberry
 Pi and H-bridge share same power supply ground. If the ground is connected 
