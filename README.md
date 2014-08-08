@@ -5,6 +5,7 @@ Connection to the Raspberry Pi I2C bus is done as follows
 
 ```textile
 Raspberry Pi     H-bridge CONN2     
+3V3 power   ---- 1 3V3
 SDA (GPIO0) ---- 2 SDA
 SCL (GPIO1) ---- 4 SCL
 ```
