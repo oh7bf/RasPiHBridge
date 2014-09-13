@@ -82,7 +82,7 @@ address   data      bits inverted except for TRISIO
 13        EC        ini_ANSEL
 14        FF        ini_VRCON
 15        0F        ini_TRISIO
-16        CE        ini_T1CON
+16        FE        ini_T1CON
 17        FF        ini_IOC
 20        28        i2c address (or other free address)
 ```
