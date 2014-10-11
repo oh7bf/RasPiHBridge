@@ -113,4 +113,5 @@ Turn motor counter clockwise
 pipic -a 28 -c 30 -d 47b
 ```
 
+See pipichbd(1) for a motor server.
 
